@@ -23,6 +23,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color: #555; line-height: 50px; font-style: italic; }
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -57,6 +58,23 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.header {
+  padding-top: 6rem;
+  background-image: url(../img/backgrounds/landing.jpg);
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.header__texto{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  color:white;
+  margin-top: 5rem;
+}
+h1, h2 {
+  color:white;
+}
 #header {
   position: fixed;
   top: 0;
@@ -970,7 +988,6 @@ strong { font-weight: 600; }
 a { color: #a365bc; border-bottom: 1px dashed #a365bc; text-decoration: none; transition: all .3s; }
 a:hover, a:focus { color: #a365bc; border: 0; text-decoration: none; }
 
-h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color: #555; line-height: 50px; font-style: italic; }
 h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-style: italic; }
 
 img { max-width: 100%; }
@@ -1010,7 +1027,7 @@ img { max-width: 100%; }
 
 .navbar { background: #444; transition: all .6s; backface-visibility: hidden; }
 
-.navbar.navbar-no-bg { background: #444; background: rgba(0, 0, 0, 0.2); }
+.navbar.navbar-no-bg { background: #444; background: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-nav { font-size: 15px; color: #fff; text-transform: uppercase; }
 .navbar-dark .navbar-nav .nav-link { color: #fff; color: rgba(255, 255, 255, 0.8); border: 0; }
@@ -1102,3 +1119,7 @@ img { max-width: 100%; }
 /***** Footer *****/
 
 footer { padding: 40px 0; }
+
+.rotate90 {
+  transform: rotate(-90deg);
+} 
